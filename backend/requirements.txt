@@ -1,0 +1,13 @@
+# The exact packages this project needs. Install them all with:
+#     pip install -r requirements.txt
+
+fastapi          # the web framework
+uvicorn          # the server that actually runs FastAPI
+requests         # to call the OpenWeather API
+python-dotenv    # to read the .env file
+pydantic         # to validate incoming request data (comes with FastAPI, listed for clarity)
+
+# --- AI agent (LangGraph + OpenAI) ---
+langgraph          # builds the tool-calling agent
+langchain-openai   # connects the agent to OpenAI's models
+langchain-core     # core tool/message types used by the agent
